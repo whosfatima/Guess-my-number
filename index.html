@@ -12,7 +12,7 @@
         <button type="button">Again!</button>
         <div><img src="./icons/Moon.png" alt="" /></div>
       </div>
-      <div class="right"><img src="./icons/Settings.png" alt="" /></div>
+      <div class="right"><img id='OPenModal' src="./icons/Settings.png" alt="" /></div>
     </header>
     <div class="container">
       <hr class="line" />
@@ -39,12 +39,13 @@
       <hr class="line" />
       <p>made by me!!!</p>
     </footer>
-        <div class="modalBox">
+        <div class="modalBox" id="modalBox">
       <form>
         <input id="minNumber" type="number" placeholder="min number" />
         <input id="maxNumber" type="number" placeholder="max number" />
-        <button type="button">Save</button>
+        <button type="button" id="SaveValue">Save</button>
       </form>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
