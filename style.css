@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Turret+Road:wght@200;300;400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+:root {
+    --pry-Color: #FFD350;
+    --pry-ff: 'Press Start 2P';
+    --sec-ff: 'Turret Road'
+}
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Turret Road', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 120px;
+    padding: 50px;
+
+    /* background-color: red; */
+}
+
+header .left {
+    display: flex;
+    align-items: center;
+}
+
+header .left button {
+    margin-right: 16px;
+    border: none;
+    background-color: var(--pry-Color);
+    font-family: "Press Start 2P";
+    font-size: 16px;
+    cursor: pointer;
+    padding: 18px 14px;
+    border-radius: 1px;
+}
+
+header .left img {
+    width: 64px;
+    cursor: pointer;
+}
+
+header .right img {
+    width: 82px;
+    cursor: pointer;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.line {
+    height: 5px;
+    margin-top: 6%;
+    /* display: block; */
+    /* color: var(--pry-Color); */
+    background: var(--pry-Color);
+    border: none;
+}
+
+.result {
+    text-align: center;
+    font-size: 2rem;
+    /* display: inline; */
+    margin: 0px auto;
+    /* width: 22px; */
+    padding: 2rem 4rem;
+    /* z-index: 2; */
+    position: relative;
+    bottom: 3.5rem;
+    border: 5px solid var(--pry-Color);
+    border-radius: 4px;
+    background-color: #fff;
+    font-family: var(--pry-ff);
+    /* font-weight: bold; */
+    /* font-size: 24px; */
+}
+
+.ContainerRecords {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ContainerRecords .left {
+
+    /* background-color: red; */
+    width: 100%;
+}
+
+.ContainerRecords form {
+    /* margin-left: 9rem; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ContainerRecords .left input {
+    border: 5px solid var(--pry-Color);
+    border-radius: 4px;
+    padding: 30px 5px;
+    outline: none;
+    font-family: var(--sec-ff);
+    font-weight: bold;
+    font-size: 20px;
+    width: 30%;
+    text-align: center;
+    /* color: red; */
+    /* font-family: "Press Start 2P"; */
+}
+
+/* .ContainerRecords .left input:focus{
+    border: none;
+} */
+.ContainerRecords .left button {
+    border: none;
+    background-color: var(--pry-Color);
+    font-family: var(--sec-ff);
+    /* width: 5rem; */
+    margin: 16px;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 1.5rem 14px;
+    border-radius: 1px;
+    font-weight: 500;
+    font-size: 22px;
+    width: 20%;
+}
+
+.ContainerRecords .right {
+    /* margin-right: 80%; */
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    margin: 10px 30px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ContainerRecords .right p {
+    padding: 10px 40px;
+    margin-bottom: 20px;
+    font-family: var(--pry-ff);
+    color: var(--pry-Color);
+}
+
+.ContainerRecords .right .group {
+    /* margin-bottom: 4rem; */
+    font-size: 24px;
+}
+
+.ContainerRecords .right .value {
+    font-size: 18px;
+    /* padding-bottom: 20px; */
+    margin-top: 18px;
+}
+
+footer {
+    /* background: #000; */
+    /* height: 90px; */
+    width: 100%;
+    margin-top: 50px;
+    font-family: var(--pry-ff);
+    text-align: center;
+
+}
+
+footer .line {
+    margin-bottom: 1px;
+    margin-top: 0px;
+    border: 4px dashed;
+    border-radius: 50%;
+    /* background-color: red; */
+    /* color: green; */
+    background: none;
+    color: var(--pry-Color);
+    /* padding: 30px; */
+}
+
+footer p {
+    padding-top: 25px;
+}
