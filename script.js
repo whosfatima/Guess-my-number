@@ -1,9 +1,10 @@
+const minNumber = document.getElementById('minNumber')
+const maxNumber = document.getElementById('maxNumber')
+
 const SaveValue = document.getElementById('SaveValue')
 const ModalBox = document.getElementById('modalBox')
 const OPenModal = document.getElementById('OPenModal')
 const StartRansom = document.getElementById('StartRansom')
-const minNumber = document.getElementById('minNumber')
-const maxNumber = document.getElementById('maxNumber')
 const paraVal = document.querySelector('.value')
 
 OPenModal.addEventListener('click', () => {
@@ -26,17 +27,19 @@ SaveValue.addEventListener('click', () => {
   
 })
 StartRansom.addEventListener('click', () => {
-    let maxInput= maxNumber.value 
-    let minInput= minNumber.value 
-    let minInputNumber= +minInput
-    console.log(maxInput);
-    console.log(minInputNumber);
+    let maxInput= +maxNumber.value 
+    let minInput= +minNumber.value 
+
+    // let minInputNumber= +minInput
+    console.log('MIN=' +minInput);
+    console.log('MAX= '+maxInput);
+    // console.log(minInputNumber);
     
 randomNum( minInput, maxInput)
 })
 
 function randomNum(minNumber, maxNumber) {
-    let random = Math.floor(Math.random() *(maxNumber-minNumber) + maxNumber )
+    let random = Math.floor(Math.random() *(maxNumber - minNumber)) + minNumber 
     console.log(random);
 
 }
