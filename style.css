@@ -274,3 +274,13 @@ footer p {
 .none {
     display: none;
 }
+.warning{
+    color: rgb(187, 32, 32);
+    font-size: 20px;
+       text-align: center;
+    /* font-family: var(--sec-ff); */
+    /* font-family: var(--sec-ff); */
+    font-family: var(--pry-ff);
+    line-height: 180%;
+ 
+}
