@@ -9,7 +9,7 @@ const guessPart = document.getElementById('guessPart')
 const paraVal = document.querySelector('.value')
 const warning = document.createElement('p')
 ModalBox.appendChild(warning)
-
+let avRandom=0
 const result= document.querySelector('.result')
 
 OPenModal.addEventListener('click', () => {
@@ -37,9 +37,11 @@ SaveValue.addEventListener('click', () => {
 
         warning.classList.remove('warning')
         warning.classList.add('none')
+        avRandom= randomNum(minNumberVal, maxNumberVal)
         
     }
 
+console.log(avRandom);
 
     // minNumber.value=
     // maxNumber.value=
@@ -51,19 +53,20 @@ StartRansom.addEventListener('click', () => {
     let maxInput = +maxNumber.value
     let minInput = +minNumber.value
 let GuessNumb= +guessPart.value
+if(avRandom=== GuessNumb) alert('same')
     // let minInputNumber= +minInput
     // console.log('MIN=' + minInput);
     // console.log('MAX= ' + maxInput);
     // console.log(minInputNumber);
 
-    let randomNumber= randomNum(minInput, maxInput)
-    let notran= randomNumber
-    console.log(randomNumber);
-    console.log(notran);
+    // let randomNumber= randomNum(minInput, maxInput)
+    // let notran= randomNumber
+    // console.log(randomNumber);
+    // console.log(notran);
     
     
-    // result.append(randomNumber)
-    if(GuessNumb === randomNumber) console.log('so>');
+    // // result.append(randomNumber)
+    // if(GuessNumb === randomNumber) console.log('so>');
     
 })
 
