@@ -11,19 +11,22 @@ const group = document.querySelector('.group')
 const result = document.querySelector('.result')
 
 const warning = document.createElement('p')
-// const step= document.createElement('p')
-// const score= document.createElement('p')
-const SpanStep = document.createElement('span')
+const step = document.createElement('p')
+const score = document.createElement('p')
+let SpanStep = document.createElement('span')
 
-// step.append('Step: ')
 // SpanStep.append('20')
 ModalBox.appendChild(warning)
-// group.appendChild(step, score)
+group.appendChild(step)
+group.appendChild(score)
+
 // step.appendChild(SpanStep)
 
 let avRandom = 0
 let guessStep = 20
+step.append('Step:', guessStep)
 
+// SpanStep.innerHTML = ' '
 
 
 
@@ -67,16 +70,22 @@ StartRansom.addEventListener('click', () => {
     if (avRandom === GuessNumb) {
         result.append(avRandom)
     } else {
-        let guessStepMines = guessStep--
-        console.log(guessStep);
-        group.innerHTML = `
-      <p id="step"><span>Step:</span>${guessStep}</p>
-            <p id="score"><span>Score:</span></p>
-`
+    //    SpanStep.append('')
+    guessStep--
+    // console.log(SpanStep);
+    
+    // console.log(guessStep);
+    step.append(guessStep)
+    guessStep.innerHTML=''
     }
 })
 
-
+// console.log(guessStep);
+score.append('Score:')
+//         group.innerHTML = `
+//       <p id="step"><span>Step:</span>${guessStep}</p>
+//             <p id="score"><span>Score:</span></p>
+// `
 function randomNum(minNumber, maxNumber) {
     let random = Math.floor(Math.random() * (maxNumber - minNumber)) + minNumber
     console.log(random);
